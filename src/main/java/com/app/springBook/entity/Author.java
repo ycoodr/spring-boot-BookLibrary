@@ -1,8 +1,16 @@
 package com.app.springBook.entity;
 
 import javax.persistence.*;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "authors")
 public class Author {

@@ -3,6 +3,13 @@ package com.app.springBook.entity;
 import javax.persistence.*;
 import java.util.*;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "categories")
 public class Category {
