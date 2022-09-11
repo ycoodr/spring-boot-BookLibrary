@@ -19,14 +19,14 @@ public class SpringBookApplication {
 	@Bean
 	public CommandLineRunner initialCreate(BookService bookservice){
 		return (args) -> {
-			// Book book1 = new Book("ABC1", "Book name", "My first book");
-			// Author author1 = new Author("Test name1", "Test description");
-			// Category category1 = new Category("Science books");
-			// Publisher publisher1 = new Publisher("First publisher");
-			// book1.addAuthor(author1);
-			// book1.addCategory(category1);
-			// book1.addPublisher(publisher1);
-			// bookservice.createBook(book1);
+			Book book1 = new Book("ABC1", "Book name", "My first book");
+			Author author1 = new Author("Test name1", "Test description");
+			Category category1 = new Category("Science books");
+			Publisher publisher1 = new Publisher("First publisher");
+			book1.addAuthor(author1);
+			book1.addCategory(category1);
+			book1.addPublisher(publisher1);
+			bookservice.createBook(book1);
 
 			Book book2 = new Book("ABC2", "Book name", "My first book");
 			Author author2 = new Author("Test name2", "Test description");
